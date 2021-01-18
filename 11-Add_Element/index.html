@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Eleman Ekleme</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+        .btn-group{
+            display: flex;
+            justify-content: space-around;
+        }
+        .box{
+            margin: 10px;
+            padding: 30px;
+        }
+        .box-red{
+            background-color: darkred;
+        }
+        .box-blue{
+            background-color: darkblue;
+        }
+        .box-green{
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="btn-group">
+        <button id="btn-append">Append (Sonuna)</button>
+        <button id="btn-prepend">Prepend (Başına)</button>
+        <button id="btn-after">After (Sonrasına)</button>
+        <button id="btn-before">Before (Öncesine)</button>
+        <button id="btn-multi-elements">Multi Elements</button>
+    </div>
+    <div class="box box-red">
+        <div class="box box-blue">
+
+        </div>
+    </div>
+    <div id="multi-elements">
+
+    </div>
+
+</body>
+
+</html>
