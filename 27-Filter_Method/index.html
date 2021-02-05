@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Metodu</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+      body{
+        box-sizing: border-box;
+        padding: 10px;
+      }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        input[type="text"]{
+          height: 20px;
+          width: 100%;
+          font-size: 15px;
+          padding: 5px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+  <h2>Filtreleme Örneği</h2>
+  <input id="inptFilter" type="text" placeholder="Personel adını giriniz.">
+  <br><br>
+  
+  <table>
+    <thead>
+    <tr>
+      <th>Ad</th>
+      <th>Soyad</th>
+      <th>E-Posta</th>
+    </tr>
+    </thead>
+    <tbody id="persons">
+    <tr>
+      <td>Mert</td>
+      <td>Özen</td>
+      <td>mert@test.com</td>
+    </tr>
+    <tr>
+      <td>Mehmet</td>
+      <td>Özen</td>
+      <td>mehmet@test.com</td>
+    </tr>
+    <tr>
+      <td>Mesut</td>
+      <td>Özen</td>
+      <td>mesut@test.com</td>
+    </tr>
+    <tr>
+      <td>Tahir</td>
+      <td>Tanyel</td>
+      <td>tahir@test.com</td>
+    </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>
