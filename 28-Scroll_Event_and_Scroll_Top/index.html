@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Olayı ve Scroll Top Metodu</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .container {
+          width: 1024px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        
+        .navbar {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+        }
+        .bg-darkslategray{
+          background-color: darkslategray;
+        }
+        .bg-transperent{
+          background-color: transparent;
+        }
+        .navbar-dark {
+            color: white;
+        }
+        
+        .brand {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .box{
+          padding-top: 100px;
+          height: 1200px;
+          background-color: gray;
+        }
+        .btn{
+          width: 150px;
+          padding: 5px;
+          font-size: 1.3rem;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="navbar navbar-dark bg-transperent">
+        <div class="container">
+          <span class="brand">LOGO</span>
+        </div>
+    </div>
+    <main class="box">
+      <button  class="btn" id="btn-scroll">Scroll</button>
+    </main>
+</body>
+
+</html>
